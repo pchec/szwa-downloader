@@ -1,0 +1,23 @@
+This is a Windows shell wrapper for wget, grep and sed tools. It is intended to automate downloads of images from www.szukajwarchiwach.pl, the online repository of Polish State Archives.
+
+NOTE: The scripts here use a time interval to reduce speed of downloads and, consequently, the load on the servers. They are not meant to be very fast, but to save you some time with manual clicking on every image.
+
+To set up the tool follow these steps:
+1. Go to http://gnuwin32.sourceforge.net/ and from the list of packages download the Windows installers of the following tools:
+  - wget
+	- grep
+	- sed
+2. Install each of the packages into the default directory, which is "c:\Program Files\GnuWin32\"
+3. Create a new directory to store your downloaded images (e.g. in "My Documents").
+4. Place the contents of this project in newly-created directory for images.
+
+To use szwa-downloader, follow these steps:
+1. Go to www.szukajwarchiwach.pl and locate the reference code of the set you want to download. It looks something like this: "35/1852/0/1/1".
+2. Run "get-list.bat" [reference] where reference is the code from step 1.
+3. Run "get-files.bat".
+
+Known Issues:
+This project is very new and it has lots of potential issues. Installation and usage are cumbersome, there is no error handling etc. It has been done very quickly to achieve the main objective, i.e. to download a few files automatically.
+
+Disclaimer:
+Use this at your own risk. The author cannot be held reliable for any damages this script may cause. You are free to inspect the code and see if it safe to run it.

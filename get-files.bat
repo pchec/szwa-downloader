@@ -1,0 +1,1 @@
+"c:\Program Files\GnuWin32\bin\wget.exe" -i szwa_image_list.txt -nc -w 10 --random-wait --content-disposition
